@@ -120,18 +120,10 @@ article h1:first-child {
   background-color: rgb(32, 61, 34);
 }
 
-@media (max-width : 768px) {
-  .container{
-    flex-direction: column;
-  }
+@media (max-width : 768px)  {
 
   article{
-    margin-bottom: 50px;
-
+    margin: 20px;
+    width: 100%;
   }
-
-  article.col1 {
-    max-width: 80%;
-  }
-  
 }
