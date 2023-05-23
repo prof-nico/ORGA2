@@ -130,6 +130,11 @@ html {
     background-color: rgb(32, 61, 34);
   }
   
+  footer {
+    height: 100px;
+    background-color: blue;
+  }
+
   @media (max-width : 768px)  {
   
     article{
