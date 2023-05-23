@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+  }
+  
+  html {
+    background: url("../img/congruent_pentagon.png");
+    font-family: "Open Sans", sans-serif;
+    font-size: 62.5%;
+  }
+  
+  header {
+    /* height: 10rem; */
+    background-color: #4b859a;
+    margin-bottom: 3rem;
+  }
+  
+  h1 {
+    padding: 3rem 0;
+    font-size: 4rem;
+    text-align: center;
+    color: #fff;
+  }
+  
+  h2 {
+    font-size: 2.4rem;
+  }
+  
+  h3 {
+    font-size: 1.8rem;
+  }
+  
+  body {
+    margin: 0;
+    font-size: 1.4rem;
+  }
+  
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+  }
+  
+  article {
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    min-height: 256px;
+    width: 25%;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  article a:link,
+  article a:visited {
+    color: orange;
+  }
+  
+  article > .content {
+    padding: 2rem;
+  }
+  article h1:first-child {
+    margin-top: 0;
+  }
+  
+  .member-unit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 2rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: rgba(62, 120, 66, 0.7);
+    opacity: 0;
+    transition: opacity 600ms;
+  }
+  .member-unit:hover {
+    opacity: 1;
+    transition: opacity 600ms;
+  }
+  .member-unit > h1 {
+    margin: 0;
+    font-family: Georgia, serif;
+  }
+  
+  .member-unit > p {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+  
+  .member-unit .socials a {
+    margin-top: 1rem;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background-color: #fff;
+    border-radius: 50%;
+    color: black;
+    margin-right: 1rem;
+    text-decoration: none;
+    margin-bottom: 1rem;
+  }
+  
+  .member-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+  
+  #join {
+    background-color: rgb(32, 61, 34);
+  }
+  
+  .facebook::before {
+    position: absolute;
+    content: "\f09a";
+    font-family: "FontAwesome";
+    color: black;
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+    margin-left: 0.75rem;
+  }
+  
+  .twitter::before {
+    position: absolute;
+    content: "\f099";
+    font-family: "FontAwesome";
+    color: black;
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+    margin-left: 0.6rem;
+  }
+  
+  .github::before {
+    position: absolute;
+    content: "\f09b";
+    font-family: "FontAwesome";
+    color: black;
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+    margin-left: 0.6rem;
+  }
+  
+  .job {
+    width: 50%;
+  }
+  
+  .job h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  footer {
+    margin-top: 3rem;
+    background-color: #4b859a;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 0;
+  }
+  
+  footer ul {
+    margin: 2rem auto;
+    text-align: center;
+    padding: 0;
+  }
+  
+  footer li {
+    list-style: none;
+    margin: 0.5rem 0;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #fff;
+    margin: 1rem auto;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 1042px) {
+    .container {
+      margin: 0 3rem;
+    }
+  
+    article {
+      width: 33.3%;
+    }
+  
+    .job {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 845px) {
+    article {
+      width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 590px) {
+    article {
+      width: 100%;
+    }
+  }
+  
