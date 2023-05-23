@@ -13,12 +13,25 @@
     background-color: #4b859a;
     margin-bottom: 3rem;
   }
+
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #logo {
+    justify-content: start;
+    width: 90px;
+    margin-left: 10px;
+  }
   
   h1 {
     padding: 3rem 0;
     font-size: 4rem;
     text-align: center;
     color: #fff;
+    
   }
   
   h2 {
