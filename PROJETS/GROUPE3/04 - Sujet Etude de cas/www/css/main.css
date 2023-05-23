@@ -74,7 +74,11 @@ article.col1 {
 }
 .text {
   font-weight: 500;
+<<<<<<< HEAD
   color: black;
+=======
+  color: rgb(0, 0, 0);
+>>>>>>> 290a602b2f310e6d5131be81b74f98e6a14c7b0a
   margin-left: 10px;
 }
 
