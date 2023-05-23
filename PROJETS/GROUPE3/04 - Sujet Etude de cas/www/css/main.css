@@ -74,7 +74,7 @@ article.col1 {
 }
 .text {
   font-weight: 500;
-  color: gray;
+  color: rgb(0, 0, 0);
   margin-left: 10px;
 }
 
