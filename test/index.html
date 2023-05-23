@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon site</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
@@ -12,18 +13,65 @@
             <p>Salutations, à tous et à toutes !</p>
           </dialog>
         <h1>Bienvenue sur mon CV web !</h1>
-        <p>
-            Vous pouvez me contacter par mail a <a href="mailto:aymeric.boisne@outlook.fr">l'adresse suivante</a> ou via <a href="tel:+33712345678">ce numéro</a>
-        </p>        
+          <img src="img/avatar.jpg" alt="photo" loading="lazy">     
         <nav>
             <ul>
-
+                <li><a href="#">mes informations</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">mes formations</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">mes experiences pro</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">mes competences</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">mes centres de d'interets</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <label for="site">progression de mon site:</label>
-        <progress id="site" max="100" value="35"> 35% </progress>
         <section>
+            <div>
+                <h2>Mes informations</h2>
+                <h3>Aymeric BOISNE-NOC</h3>
+                <p>
+                    Vous pouvez me contacter par mail a <a href="mailto:aymeric.boisne@outlook.fr">l'adresse suivante</a> ou via <a href="tel:+33712345678">ce numéro</a>
+                </p>   
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, doloribus debitis ut cumque neque numquam illo error architecto quod sed, sint ad! Suscipit nemo sit veritatis tempore libero tenetur adipisci.</p>
+            </div>
+            <div>
+                <h2>mes formations</h2>
+                <ul>
+                    <li>
+                        3WA
+                    </li>
+                    <li>
+                        OpenClassroom
+                    </li>
+                    <li>...</li>
+                </ul>
+            </div>
+            <div>
+                <h2>mes experiences pro</h2>
+                <article>
+                    <p>Lorem ipsum dolor sit amet <mark> Manutention </mark> adipisicing elit. Tempore placeat eveniet perspiciatis enim, excepturi minus laudantium. Id tenetur labore numquam minus fugiat repudiandae molestias voluptatem, nesciunt repellat magnam qui natus.</p>
+                </article>
+            </div>
+            <div>
+                <h2>mes competences</h2>
+                <label for="competence">Git:</label>
+                <progress id="competence" max="100" value="35"> 35% </progress>
+                <label for="competence">HTML et CSS :</label>
+                <progress id="competence" max="100" value="55"> 55% </progress>
+                <label for="competence">Php et Javascript :</label>
+                <progress id="competence" max="100" value="35"> 35% </progress>
+            </div>
+            <div>
+                <h2>mes centre d'interets</h2>
+            </div>
         </section>
     </main>
     <footer>
