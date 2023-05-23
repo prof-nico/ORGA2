@@ -15,6 +15,8 @@
       src="https://kit.fontawesome.com/b284a4a6be.js"
       crossorigin="anonymous"
     ></script>
+
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
@@ -101,6 +103,7 @@
       <section>
         <h2>Prendre rendez-vous pour une consultation</h2>
         <form action="form.php" method="post">
+            <legend>Veuillez remplir ce formulaire pour prendre rendez-vous</legend>
           <fieldset>
             <label for="prenom">Prénom</label>
             <input type="text" name="prenom" id="prenom" required focus />
@@ -118,7 +121,7 @@
 
             <label for="birthday">Date de naissace</label>
             <input
-              type="number"
+              type="text"
               name="birthday"
               id="birthday"
               required
@@ -127,7 +130,7 @@
             />
 
             <label for="telephone">Numéro de téléphone</label>
-            <input type="number" name="telephone" id="telephone" required />
+            <input type="tel" name="telephone" id="telephone" required />
 
             <label for="email">Adresse email</label>
             <input type="email" name="email" id="email" required />
