@@ -214,15 +214,18 @@
       width: 29%;
       margin: 1em;
     }
-  
     .job {
-      width: 100%;
+      width: 62%;
     }
+    
   }
   
   @media screen and (max-width: 845px) {
     article {
       width: 44%;
+    }
+    .job {
+      width: 100%;
     }
   }
   
