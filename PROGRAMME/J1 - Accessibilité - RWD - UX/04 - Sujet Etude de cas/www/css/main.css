@@ -86,3 +86,15 @@ article h1:first-child {
 #join {
   background-color: rgb(32, 61, 34);
 }
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  text-align: center;
+}
+
+footer ul, ul li a {
+  text-decoration: none;
+  color:black;
+  list-style-type: none;
+}
