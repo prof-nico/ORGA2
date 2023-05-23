@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav></nav>
+    </header>
+    <main>
+      <h1>HTML DEMO</h1>
+      <article>
+        <datalist>
+          <option value="pomme"></option>
+          <option value="banana"></option>
+          <option value="cerry"></option>
+          <option value="poire"></option>
+          <option value="pomme"></option>
+        </datalist>
+        <address>
+          <a href="mailto:dummy@dummy.com">envoyer moi un mail</a>
+          <a href="tel:+13115552368">(311) 555-2368</a>
+        </address>
+      </article>
+      <section>
+        <h2>contact</h2>
+        <form oninput="form">
+          <input
+            type="text"
+            placeholder="nom"
+            required="required"
+            pattern="[A-Z]"
+          />
+          <input
+            type="text"
+            placeholder="prenom"
+            required="required"
+            pattern="[A-Z]"
+          />
+          <textarea name="long-text" id="text" cols="30" rows="10"></textarea>
+          <button>send</button>
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
