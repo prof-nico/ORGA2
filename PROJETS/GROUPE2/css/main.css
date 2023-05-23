@@ -12,9 +12,7 @@
     /* height: 10rem; */
     background-color: #4b859a;
     margin-bottom: 3rem;
-  }
-
-  header{
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
