@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice d'intégration HTML</title>
+</head>
+<body>
+    
+    <header>
+        <img src="./img/im1.jpg"
+            srcset="./img/im1.jpg 725w"
+            sizes="(max-width: 800px) 150px,
+                250px"
+            alt="logo">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <h1>Exercice d'intégration HTML</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <article>
+                <h2>article 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil et perferendis placeat unde commodi, necessitatibus, quod quisquam dolores consequatur esse aliquid quis tenetur quia quidem voluptatem alias provident. Tempora, sequi!</p>
+            </article>
+            <aside>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti nostrum repellendus odio, consectetur fugit repellat quisquam iure reiciendis atque ratione hic, minus ipsa sit eveniet facere perferendis ut iste? Consequuntur?</p>
+            </aside>
+            <img src="./img/im2.jpg"
+                srcset="./img/im2.jpg 700w"
+                sizes="(max-width: 800px) 300px,
+                    700px"
+                alt="ag2r citroen">
+
+            <br>
+            <details>
+                <summary>Position</summary>
+                A l'attaque !
+            </details>
+            <br>
+
+            <form>
+                <label for="name">nom : </label>
+                <input type="text" id="name" name="name" placeholder="votre nom" required>
+                <label for="email">email : </label>
+                <input type="email" id="email" name="email" placeholder="votre adresse email" required>
+                <label for="tel">telephone : </label>
+                <input type="tel" id="tel" name="tel">
+                <label for="comments">commentaires : </label>
+                <textarea id="comments" name="comments" placeholder="saisissez un commentaire" required></textarea>
+                <input type="submit">Commenter</button> 
+            </form>            
+
+        </section>
+
+        <section>
+            <article>
+                <h2>article 2</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus neque asperiores consequatur perspiciatis voluptates modi ab mollitia maxime! Reiciendis nulla quae autem quod repellendus assumenda corporis vitae explicabo dolor natus.</p>
+            </article>
+            <aside>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid placeat consequatur labore? Nemo eligendi officia voluptates optio, veritatis ducimus esse omnis, consectetur ipsa placeat quibusdam inventore magnam nulla necessitatibus sit.</p>
+            </aside>
+
+            <figure>
+                <img src="./img/im3.jpeg">
+                <figcaption>chaud devant !!!</figcaption>
+            </figure>
+            
+            <dialog id="favDialog">
+                <form method="dialog">
+                    <label for="name">nom : </label>
+                    <input type="text" id="name" name="name" placeholder="votre nom" required>
+                    <label for="email">email : </label>
+                    <input type="email" id="email" name="email" placeholder="votre adresse email" required>
+                    <label for="tel">telephone : </label>
+                    <input type="tel" id="tel" name="tel">
+                    <select name="categorie" id="categorie">
+                        <option value="1">1ere cat</option>
+                        <option value="2">2e cat</option>
+                        <option value="3">3e cat</option>
+                    </select>
+                    <label for="comments">commentaires : </label>
+                    <textarea id="comments" name="comments" placeholder="saisissez un commentaire" required></textarea>
+                    <menu>
+                        <button value="cancel">Annuler</button>
+                        <button id="confirmBtn" value="default">Valider</button>
+                    </menu>
+                </form>
+            </dialog>
+            <menu>
+                <button id="updateDetails">Commenter</button>
+            </menu>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>contact : sylvainfoucault1@gmail.com</p>
+        <p>crédits : Sylvain Foucault 2023</p>
+    </footer>
+
+
+    <script>
+        let updateButton = document.getElementById('updateDetails');
+        let favDialog = document.getElementById('favDialog');
+        let outputBox = document.querySelector('output');
+        let selectEl = document.querySelector('select');
+        let confirmBtn = document.getElementById('confirmBtn');
+
+        // Le bouton "Mettre à jour les détails" ouvre le <dialogue> ; modulaire
+        updateButton.addEventListener('click', function onOpen() {
+        if (typeof favDialog.showModal === "function") {
+            favDialog.showModal();
+        } else {
+            console.error("L'API <dialog> n'est pas prise en charge par ce navigateur.");
+        }
+        });
+        // L'entrée "Animal favori" définit la valeur du bouton d'envoi.
+        selectEl.addEventListener('change', function onSelect(e) {
+        confirmBtn.value = selectEl.value;
+        });
+        // Le bouton "Confirmer" du formulaire déclenche la fermeture
+        // de la boîte de dialogue en raison de [method="dialog"]
+        favDialog.addEventListener('close', function onClose() {
+        outputBox.value = favDialog.returnValue + " bouton cliqué - " + (new Date()).toString();
+        });
+    </script>
+</body>
+</html>
