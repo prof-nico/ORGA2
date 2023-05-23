@@ -1,0 +1,253 @@
+html {
+  /* background: url('../img/congruent_pentagon.png'); */
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav {
+  width: 100%;
+  height: 4rem;
+  background: #0077b6;
+}
+.container-nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.container-nav .logo {
+  width: 3rem;
+  height: 3rem;
+}
+.container-nav .navbar-links {
+  width: 70%;
+}
+.navbar-links a,
+li {
+  list-style-type: none;
+  text-decoration: none;
+  color: #fff;
+}
+.container-nav ul {
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+}
+.title {
+  color: #023047;
+  font-size: 4rem;
+  width: 70%;
+  margin: 0 auto;
+}
+article {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  min-height: 256px;
+}
+/* img {
+  width: 30rem;
+  height: 25rem;
+} */
+article.col1 {
+  width: 300px;
+  height: 300px;
+}
+.text {
+  font-weight: 500;
+  color: gray;
+  margin-left: 10px;
+}
+
+article.col2 {
+  width: 625px;
+}
+
+article a:link,
+article a:visited {
+  color: #023047;
+}
+
+article > .content {
+  padding: 2rem;
+}
+article h1:first-child {
+  margin-top: 0;
+}
+article h1 {
+  font-size: 2rem;
+}
+.media {
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.media span {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  text-align: center;
+}
+.media i {
+  font-size: 1.25rem;
+  color: #cececedb;
+}
+
+.member-unit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #457b9d;
+  opacity: 0;
+  transition: opacity 600ms;
+}
+.member-unit:hover {
+  opacity: 1;
+  transition: opacity 600ms;
+}
+.member-unit > h1 {
+  margin: 0;
+  font-family: Georgia, serif;
+}
+.member-unit > h1 > small {
+  font-size: 1rem;
+  font-weight: normal;
+}
+.member-unit > p {
+  margin: 0;
+  font-size: 0.8125rem;
+}
+.member-unit .socials a {
+  margin-top: 0.4rem;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  text-indent: -9999px;
+}
+.member-photo {
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#join {
+  background-color: #8ecae6;
+}
+/* footer */
+.footer-clean {
+  padding: 50px 0;
+  background-color: #0077b6;
+  color: #fff;
+}
+
+.footer-clean h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer-clean ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.footer-clean ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-clean ul a:hover {
+  opacity: 1;
+}
+
+.footer-clean .item.social {
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  .footer-clean .item {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-clean .item.social {
+    text-align: center;
+  }
+}
+
+.footer-clean .item.social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+  margin-top: 22px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-clean .item.social > a:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 991px) {
+  .footer-clean .item.social > a {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-clean .item.social > a {
+    margin-top: 10px;
+  }
+}
+
+.footer-clean .copyright {
+  margin-top: 14px;
+  margin-bottom: 0;
+  font-size: 13px;
+  opacity: 0.6;
+}
