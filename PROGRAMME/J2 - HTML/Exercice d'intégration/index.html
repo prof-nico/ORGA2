@@ -3,18 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercice d'intégration</title>
+    <meta name="Gypaète" content="width=device-width, initial-scale=1.0">
+    <title>Le Gypaète Barbu</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <header class='header'>
+        <div class="title">
+            <a href="index.html"><img src="img/Logo_LPO.png" alt="Ligue pour la Protection des Oiseaux"></a>
+            <h1>Le Gypaète Barbu</h1>
+        </div>
 
+        <nav class="nav">
+            <a href='#Introduction'>Introduction</a>
+            <a href="#Présentation">Présentation</a>
+            <a href="#Rejoindre">Nous rejoindre</a>
+        </nav>   
     </header>
-    <main>
 
+    <main class='container'>
+        <article id="Introduction">
+            <h2>Introduction à l'ornithologie</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas atque vero labore! Quidem voluptas iusto vel sunt fuga, quisquam aspernatur blanditiis dolor laboriosam repellendus fugit laborum enim soluta aliquam incidunt omnis assumenda commodi reprehenderit repudiandae recusandae, sit minus. Perspiciatis consectetur tempore quod eaque nam asperiores culpa quae obcaecati pariatur quia!</p>
+            
+        </article>
+        <article id="Présentation">
+            <h2>Présentation de l'espèce</h2>
+            <div class="gypaète">
+                <figure>
+                    <img src="img/GypaèteVol.jpg" alt="Gypaète vol">
+                    <figcaption>Gypaète en Vol</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/GypaèteNid.webp" alt="Nid Gypaète">
+                    <figcaption>Le nid du Gypaète</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/GypaèteCarcasse.jpg" alt="Gypaète Carcasse">
+                    <figcaption>Gypaète avec une carcasse</figcaption>
+                </figure>
+            </div>
+
+        </article>
+        <article id="Rejoindre">
+            <h2>Rejoignez nous !</h2>
+            <form action="GET">
+                <fieldset>
+                    <legend>Vos informations</legend>
+
+                    <label for="prenom">Votre prénom*:</label>
+                    <input type='text' name='prenom' id='prenom' placeholder='Ex: Guillaume' required>
+                    
+                    <label for="nom">Votre nom*:</label>
+                    <input type='text' name='nom' id='nom' placeholder='Ex: DELEPINE' required>
+                    
+                    <label for="email">Votre email 3wa*:</label>
+                    <input type='email' name='email' id='email' placeholder='Ex: gui.delepine@3wa.io' pattern="^[\w.%+-]+@3wa\.io$" required>
+                    <br>
+                    
+                    <label for="age">Votre âge*:</label>
+                    <input type='number' name='age' id='age' placeholder='Ex: 24' min="18" max="99" step="1" required>
+
+                    <label for="tel">Votre téléphone:</label>
+                    <input type='tel' name='tel' id='tel' placeholder='Ex: 06 20 20 20 20'>
+                    <br>
+                    <br>
+
+                    <p>Genre*:</p>
+                    <label for="femme">Femme</label>
+                    <input type="radio" name="sexe" id="femme" value='femme'>
+                    
+                    <label for="homme">Homme</label>
+                    <input type="radio" name="sexe" id="homme" value='homme'>
+
+                    <label for="NonBinaire">Non binaire</label>
+                    <input type="radio" name="sexe" id="NonBinaire" value='NonBinaire'>
+                    <br>
+                    <br>
+
+                    <label for="niveau">Votre niveau de connaissances*:</label>
+                    <select name="niveau" id="niveau" required>
+                        <option value='1'>Novice</option>
+                        <option value='2'>Avancé</option>
+                        <option value='3'>Professionel</option>
+                    </select>
+                    <br>
+                    <br>
+                    
+                    <label for="commentaire">Commentaire</label>
+                    <br>
+                    <textarea name="commentaire" id="commentaire" cols="30" rows="5"></textarea>
+                    <br>
+                    <br>
+
+                    <button type="'submit">Envoyer votre candidature !</button>
+
+                </fieldset>
+                
+            </form>
+
+        </article>
     </main>
-    <footer>
-        
+    
+    <footer class="footer">
+        <address>
+            <a href="mailto:lpo@3wa.io">lpo@3wa.io</a><br>
+            <a href="tel:+33600000000">06 00 00 00 00</a><br>
+            <a href="lpo.fr">Notre site</a>
+        </address>
     </footer>
     
 </body>

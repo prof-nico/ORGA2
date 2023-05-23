@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    background-color: #d1d1d1;
+}
+h2 {
+    text-align: center;
+}
+.header {
+    background-color: #2c2c2c;
+    padding: 1em;
+    color: #fff;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.title img {
+    margin-right: 1em;
+    width: 5em
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 3em 5em 1.5em 5em;
+}
+.container {
+    margin: 0 3em;
+    
+}
+.gypaète {
+    display: flex;
+}
+.gypaète figure {
+    width: 33%;
+}
+.gypaète img {
+    width: 100%;
+}
+
+.footer {
+    background-color: #141414;
+    color: #fff;
+    margin-top: 3em;
+    padding: 2em;
+}
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
