@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clinique vétérinaire du Vercors</title>
+    <meta
+      name="description"
+      content="Clinique vétérinaire du Vercors - les meilleurs soins pour vos animaux sur le plateau du Vercors"
+    />
+
+    <!--fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/b284a4a6be.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <img src="#" alt="Logo de la clinique vétérinaire du Vercors" />
+      <picture>
+        <source media="(max-width: 780px)" srcset="#">
+        <source media="(max-width: 980px)" srcset="#">
+        <source media="(min-width: 981px)" srcset="#">
+        <img src="#" alt="image d'entête">
+      </picture>
+
+      <h1>Clinique vétérinaire du Vercors</h1>
+
+      <nav>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Notre clinique</a></li>
+          <li><a href="#">Nos prestations</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Actualités</h2>
+        <article>
+          <h3>L'été arrive, protégez vos animaux des tiques !</h3>
+          <figure>
+            <img alt="image 1" src="#" />
+            <figcaption>Légende de l'image 1</figcaption>
+          </figure>
+          <p>
+            <span style="color:red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, corrupti.</span><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+            quas?<br>
+            <em> sit amet consectetur, adipisicing elit.</em> Natus molestias dicta error totam atque odit iure nesciunt, ducimus nisi fugiat.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore qui minus aspernatur illum adipisci nobis. Impedit quos veritatis suscipit quasi perferendis dolorum accusantium doloremque id accusamus, <em>tenetur explicabo incidunt animi.</em><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, suscipit.
+          </p>
+          <p><pre>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, unde.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quas nulla id laudantium asperiores non eos reprehenderit sint dicta corrupti?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, beatae maxime autem ipsum aliquid quidem.
+          </pre></p>
+        </article>
+        <hr>
+        <article>
+          <h3>Pourquoi stériliser son animal ?</h3>
+          <figure>
+            <img alt="image 2" src="#" />
+            <figcaption>Légende de l'image 2</figcaption>
+          </figure>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A labore,
+            ut totam provident mollitia eos placeat? Consequuntur quibusdam
+            eveniet, cumque accusantium ea aspernatur, id a officia rem nobis
+            adipisci vitae.
+            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, molestias.</strong>
+          </p>
+        </article>
+        <hr>
+        <article>
+            <h3>Découvrez notre métier en vidéo !</h3>            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DSBMM2o-fsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p><a href="https://youtu.be/DSBMM2o-fsE">UNE JOURNÉE AVEC UNE VÉTÉRINAIRE (découverte métier)</a> de <a href="https://www.youtube.com/@LudovicBvideos">Ludovic B</a> sur <a href="https://www.youtube.com/">Youtube</a>.</p>
+        </article>
+      </section>
+
+      <aside>
+        <h3>Vos avis</h3>
+        <blockquote>
+          <q> Très bonne clinique, des soins de qualités. </q>
+          <cite>Hugo Dubois</cite>
+        </blockquote>
+        <blockquote>
+          <q> Des vétérinaires très doux avec nos animaux. </q>
+          <cite>Marie Duchêne</cite>
+        </blockquote>
+        <blockquote>
+          <q> Vétérinaires de très bon conseil, je recommande. </q>
+          <cite>Camille Delarive</cite>
+        </blockquote>
+      </aside>
+
+      <section>
+        <h2>Prendre rendez-vous pour une consultation</h2>
+        <form action="form.php" method="post">
+          <fieldset>
+            <label for="prenom">Prénom</label>
+            <input type="text" name="prenom" id="prenom" required focus />
+
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom" required />
+
+            <p>Sexe</p>
+            <label for="Homme">Homme</label>
+            <input type="radio" name="genre" id="Homme" value="Homme" />
+            <label for="Femme">Femme</label>
+            <input type="radio" name="genre" id="Femme" value="Femme" />
+            <label for="Autre">Autre</label>
+            <input type="radio" name="genre" id="Autre" value="Autre" />
+
+            <label for="birthday">Date de naissace</label>
+            <input
+              type="number"
+              name="birthday"
+              id="birthday"
+              required
+              pattern="^(0?[1-9]|[12][0-9]|3[01])/(0?[1-9]|[1][0-2])/[0-9]+$"
+              placeholder="01/01/1990"
+            />
+
+            <label for="telephone">Numéro de téléphone</label>
+            <input type="number" name="telephone" id="telephone" required />
+
+            <label for="email">Adresse email</label>
+            <input type="email" name="email" id="email" required />
+
+            <label for="password">Mot de passe</label>
+            <input type="password" name="password" id="password" required />
+
+            <p>Créneaux horaires où vous souhaitez prendre rdv</p>
+            <label for="8-10">8h-10h</label>
+            <input type="checkbox" name="creneaux" id="8-10" value="8-10" />
+            <label for="10-12">10h-12h</label>
+            <input type="checkbox" name="creneaux" id="10-12" value="10-12" />
+            <label for="13-15">13h-15h</label>
+            <input type="checkbox" name="creneaux" id="13-15" value="13-15" />
+            <label for="15-17">15h-17h</label>
+            <input type="checkbox" name="creneaux" id="15-17" value="15-17" />
+
+            <label for="animal">Votre animal</label>
+            <select name="animal" id="animal" required>
+              <option value="">
+                --Veuillez choisir l'espèce de votre animal--
+              </option>
+              <option value="Chien">Chien</option>
+              <option value="Chat">Chat</option>
+              <option value="NAC">NAC</option>
+            </select>
+
+            <textarea
+              name="message"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Votre message"
+            ></textarea>
+
+            <button type="submit">Envoyer</button>
+          </fieldset>
+        </form>
+
+        <p>Avant de vous rendre à votre rdv, n'oubliez pas :</p>
+        <ol>
+            <li>Les papiers d'identification de votre animal</li>
+            <li>Le carnet de santé de votre animal</li>
+            <li>Les comptes-rendus des derniers examens effectués</li>
+        </ol>
+
+      </section>
+
+      <section>
+        <h2>Nos tarifs</h2>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Chien</th>
+              <th>Chat</th>
+              <th>NAC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Consultation</td>
+              <td>20 euros</td>
+              <td>18 euros</td>
+              <td>22 euros</td>
+            </tr>
+            <tr>
+              <td>Stérilisation</td>
+              <td>150 euros</td>
+              <td>130 euros</td>
+              <td>100 euros</td>
+            </tr>
+            <tr>
+              <td>Chirurgies (hors stérilisation)</td>
+              <td>De 150 euros à 1200 euros</td>
+              <td>De 130 euros à 1100 euros</td>
+              <td>De 100 euros à 800 euros</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Tarifs en vigueur jusqu'au 31/12/2023</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section>
+        <h2>Questions diverses</h2>
+        <details>
+          <summary>Puis-je payer en plusieurs fois?</summary>
+          Oui, nous acceptons les paiements en 3 fois sans frais
+          supplémentaires.
+        </details>
+
+        <details>
+          <summary>
+            Si je ne peux pas venir à mon rendez-vous, est-ce que je dois quand
+            même payer la consultation ?
+          </summary>
+          Nous faisons payer la consultation si vous ne prévenez pas de votre
+          absence au moins 6h à l'avance.
+        </details>
+
+        <details>
+          <summary>
+            Est-ce que je peux amener plusieurs animaux pour une seule
+            consultation ?
+          </summary>
+          Vous pouvez amener jusqu'à 3 animaux si la consultation ne concerne
+          que la vaccination de vos animaux.
+        </details>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-rs">
+        <h4>Suivez-nous sur les réseaux sociaux !</h4>
+        <a
+          href="#"
+          target="_blank"
+          title="S'ouvre dans un nouvel onglet vers la page Facebook"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          href="#"
+          target="_blank"
+          title="S'ouvre dans un nouvel onglet vers la page Twitter"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a
+          href="#"
+          target="_blank"
+          title="S'ouvre dans un nouvel onglet vers la page Vimeo"
+          ><i class="fa-brands fa-vimeo-v"></i
+        ></a>
+        <a
+          href="#"
+          target="_blank"
+          title="S'ouvre dans un nouvel onglet vers la page Instagram"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
+
+      <div class="footer-horaires">
+        <h4>Horaires d'ouvertures</h4>
+        <p>Lundi : 8h - 19h</p>
+        <p>Mardi : 8h - 19h</p>
+        <p>Mercredi : 8h - 19h</p>
+        <p>Jeudi: 8h - 19h</p>
+        <p>Vendredi: 8h - 19h</p>
+        <p>Samedi: 10h - 17h</p>
+        <p>Dimanche : Fermé</p>
+      </div>
+
+      <div class="footer-coordonnees">
+        <h4>Contact</h4>
+        <address>
+          <p>Clinique vétérinaire du Vercors</p>
+          <p>13 rue de la montagne</p>
+          <p>38250</p>
+          <p>Lans en Vercors</p>
+        </address>
+        <p>01 02 03 04 05</p>
+        <a href="mailto:clinique-veto-vercors@gmail.com"
+          >clinique-veto-vercors@gmail.com</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
