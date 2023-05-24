@@ -11,30 +11,29 @@
         </header>
         <div class="form">
             <form action="#">
-                <div>
+                <div class="input_box">
                     <label for="name">Nom:</label>
                     <input type="text" name="name" id="name" class="input" required>
                 </div>
-                <div>
-                    
+
+                <div class="input_box">
                     <label for="firstname">Prenom:</label>
                     <input type="text" name="firstname" id="firstname" class="input" required>
-                
                 </div>
                 
-                <div>
+                <div class="input_box">
                     <label for="phone">Telephone:</label>
-                    <input type="text" name="phone" id="phone" class="input" pattern="[0-9]{10}" required>    
+                    <input type="text" name="phone" id="phone" class="input" pattern="[0-9]{10}" placeholder="0123456789" required>    
                 </div>
                 
-                <div>
+                <div class="input_box">
                     <label for="birthday">Date de naissance:</label>
                     <input type="date" name="birthday" id="birthday" class="input" required>    
                 </div>
                 
-                <div>
+                <div class="input_box">
                     <label for="password">Password:</label>
-                    <input type="password" name="password" class="input" id="password" pattern="[A-Z]{1}[a-z]{7}" required>    
+                    <input type="password" name="password" class="input" id="password" placeholder="Aazertyu" pattern="[A-Z]{1}[a-z]{7}" required>    
                 </div>
                 
                 <div class="section abonnement">
@@ -63,7 +62,7 @@
                 </div>
                 
                 <div class="button">
-                    <input type="submit" class="submit danger" value="Effacer">
+                    <input type="reset" class="submit danger" value="Effacer">
                     <input type="submit" class="submit send" value="Envoyer">
                 </div>
             </form>

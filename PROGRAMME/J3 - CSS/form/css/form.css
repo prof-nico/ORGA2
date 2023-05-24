@@ -38,6 +38,14 @@
         border-color: green;
     }
 
+    div.input_box:has(input:invalid) label {
+        color: red;
+    }
+
+    div.input_box:has(input:valid) label {
+        color: green;
+    }
+
     .section {
         width: 97%;
     }
