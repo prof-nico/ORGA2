@@ -68,7 +68,7 @@
 
         <article>
             <h2>Ici mon formulaire</h2>
-            <form action="submit">
+            <form novalidate>
               <!-- 
               <label for="prenom">Prénom</label> :
               <input type="text" id="prenom" name="prenom" required />
@@ -83,18 +83,61 @@
               <label for="nom">Nom Complet</label> : <br>
               <input type="text" id="nom" name="nom" required />
               <br>
+
               <label for="email">Adresse e-mail</label> : <br>
               <input type="email" id="email" required />
               <br>
+
               <label for="tel">Numéro de téléphone</label> : <br>
               <input type="tel" id="tel" required />
               <br>
+
               <label for="date">Date de naissance</label> : <br>
               <input type="date" id="date" required />
               <br>
+
               <label for="password">Mot de passe</label> : <br>
               <input type="password" id="password" required />
               <br>
+              <br>
+
+              <fieldset>
+                <legend>Options d'abonnement</legend>
+            
+                <div>
+                  <input type="checkbox" id="newsletter" name="newsletter" checked>
+                  <label for="newsletter">Recevoir la Newsletter</label>
+                </div>
+            
+                <div>
+                  <input type="checkbox" id="offres" name="offres">
+                  <label for="offres">Recevoir les offres promotionnelles</label>
+                </div>
+              </fieldset>
+
+
+              <fieldset>
+                <legend>Méthode de paiement :</legend>
+            
+                <div>
+                  <input type="radio" id="Carte" name="moyen" value="Carte"
+                         checked>
+                  <label for="Carte">Carte de crédit</label>
+                </div>
+            
+                <div>
+                  <input type="radio" id="PayPal" name="moyen" value="PayPal">
+                  <label for="PayPal">PayPal</label>
+                </div>
+            
+                <div>
+                  <input type="radio" id="Chèque" name="moyen" value="Chèque">
+                  <label for="Chèque">Chèque</label>
+                </div>
+            </fieldset>
+            <br>
+
+
               <label for="comment">Commentaires</label> :
               <br>
               <textarea
@@ -105,8 +148,8 @@
                 placeholder="Ecrivez votre commentaire"
               ></textarea>
               <br>
-              <button type="submit">Effacer</button>
-              <button type="submit">Envoyer</button>
+              <button class="but" type="submit">Effacer</button>
+              <button class="but" type="submit">Envoyer</button>
 
             </form>
           </article>
