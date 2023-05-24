@@ -14,9 +14,12 @@ body {
     background-image: url("images/fond.png");
     background-repeat: repeat;
     padding: 6rem;
+    line-height: 2.8rem;
+    max-width: 1290px;
+    margin: 0 auto;
 }
 
-h2 {
+.bandeBleue h2 {
     font-size: 2rem;
     margin-bottom: 3rem;
     font-weight: bold;
@@ -36,7 +39,6 @@ h2 {
 }
 
 .bandeBleue p {
-    line-height: 2.8rem;
     margin-bottom: 3rem;
 }
 
@@ -60,27 +62,26 @@ h2 {
     margin-right: 3rem;
     width: 6.5rem;
 }
-.assistants {
-    display: flex;
-    flex-direction: column;
-}
+
 .assistants article {
     display: flex;
+    align-items: center;
     gap: 4rem;
-    padding: 5rem 25rem;
+    padding: 5rem 10rem;
 }
 .assistants h2 {
     color: #003d48;
     font-size: 2rem;
-    
+    margin-bottom: 2rem;
 }
 .assistants p {
     color: #8c9193;
     font-size: 1.5rem;
 }
 .assistants button {
-    width: 6rem;
-    height: 3rem;
+    margin-top: 2rem;
+    width: 7rem;
+    height: 3.8rem;
     font-size: 1rem;
     background-color: #f77462;
     color: white;
