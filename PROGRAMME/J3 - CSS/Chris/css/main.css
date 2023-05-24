@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+}
+.container{
+    background-image: url(../img/background.png);
+    display: flex;
+    justify-content: space-around;
+    margin-top: 500px;
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+#logo {
+    margin: 80px 20px;
+}
