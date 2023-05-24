@@ -1,0 +1,71 @@
+body {
+  background-color: black;
+}
+
+#form {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  max-width: 500px;
+  border: solid;
+  border-width: 1px;
+  padding: 20px;
+  margin: 50px auto;
+  border-radius: 20px;
+  color: white;
+}
+
+label {
+  font-size: 15;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='date'] {
+  width: 100%;
+  height: 25px;
+  border-radius: 20px;
+  padding-left: 10px;
+  margin-top: 10px;
+  border: 2px solid red;
+}
+
+input[type='text']:valid,
+input[type='email']:valid,
+input[type='tel']:valid,
+input[type='date']:valid {
+  border: 2px solid green;
+}
+
+input[type='checkbox']:checked + label {
+  font-weight: bold;
+}
+
+#submit,
+#reset {
+  max-width: 100px;
+}
+
+fieldset {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+input[type='submit'],
+input[type='reset'] {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}

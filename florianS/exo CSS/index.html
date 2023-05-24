@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="form">
+      <label for="name">Nom complet:</label><br />
+      <input type="text" id="name" name="name" required /><br />
+      <label for="email">Adresse e-mail:</label><br />
+      <input type="email" id="email" name="email" required /><br />
+      <label for="phone">Numéro de téléphone:</label><br />
+      <input type="tel" id="phone" name="phone" required /><br />
+      <label for="birth">Date de naissance:</label><br />
+      <input type="date" id="birth" name="birth" required /><br />
+      <fieldset>
+        <legend>Options d'abonnement</legend>
+
+        <input
+          type="checkbox"
+          value="newsletter"
+          id="newsletter"
+          name="newsletter"
+        />
+        <label for="newsletter">Recevoir la newsletter</label>
+        <input type="checkbox" value="promo" id="promo" name="promo" />
+        <label for="promo">Recevoir les offres promotionnelles</label>
+        <br />
+      </fieldset>
+      <fieldset>
+        <legend>Méthode de paiement:</legend>
+        <input type="radio" id="cart" name="radio" />
+        <label for="cart">Carte de crédit</label>
+        <input type="radio" id="paypal" name="radio" />
+        <label for="paypal">Paypal</label>
+        <input type="radio" id="paypal" name="radio" />
+        <label for="paypal">Chèque</label>
+      </fieldset>
+      <label for="comment">Commentaires</label><br />
+      <textarea name="comment" id="comment" cols="30" rows="10"></textarea
+      ><br />
+      <input type="submit" id="submit" />
+      <input type="reset" id="reset" />
+    </form>
+  </body>
+</html>
