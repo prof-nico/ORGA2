@@ -3,17 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Le template des démos du module 3 (feuille de style commune en version 3)">
-    <title>Template module 3</title>
-    <link rel="stylesheet" href="css/common-v3.css">
-    <link rel="stylesheet" href="css/menu-2-niveaux.css">
+    <meta name="description" content="Entrainement Html/Css">
+    <title>Entrainement semaine 3 Alternance</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <header class="header">
         <h1>Comment rester sereine</h1>
-        <p>Ceci est le paragraphe de mon magnifique site</p>
+        <p>Ceci est un paragraphe de mon magnifique site</p>
 
         <nav class="menu">
             <!--ul>li*3>a[href="#"]{Rubrique $}-->
@@ -67,13 +66,56 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur molestiae fugiat quo nemo earum aut saepe. Doloribus distinctio commodi nihil aliquam atque. Hic, quo ad blanditiis culpa accusantium velit repudiandae.</p>
         <p>Tempore, dolore porro provident praesentium ut. Saepe incidunt provident reprehenderit nisi porro nemo sint molestias laborum. Quia animi tempora omnis quod nobis! Explicabo, saepe alias eum fugiat voluptatibus quo voluptatem.</p>
 
+        <article>
+            <h2>Ici mon formulaire</h2>
+            <form action="submit">
+              <!-- 
+              <label for="prenom">Prénom</label> :
+              <input type="text" id="prenom" name="prenom" required />
+              <br>
+              <label for="sex">Sexe</label> :
+              <select name="sex" id="sex">
+                <option value="homme">Homme</option>
+                <option value="femme">Femme</option>
+              </select>
+              <br>
+              -->
+              <label for="nom">Nom Complet</label> : <br>
+              <input type="text" id="nom" name="nom" required />
+              <br>
+              <label for="email">Adresse e-mail</label> : <br>
+              <input type="email" id="email" required />
+              <br>
+              <label for="tel">Numéro de téléphone</label> : <br>
+              <input type="tel" id="tel" required />
+              <br>
+              <label for="date">Date de naissance</label> : <br>
+              <input type="date" id="date" required />
+              <br>
+              <label for="password">Mot de passe</label> : <br>
+              <input type="password" id="password" required />
+              <br>
+              <label for="comment">Commentaires</label> :
+              <br>
+              <textarea
+                name="comment"
+                id="comment"
+                cols="50"
+                rows="5"
+                placeholder="Ecrivez votre commentaire"
+              ></textarea>
+              <br>
+              <button type="submit">Effacer</button>
+              <button type="submit">Envoyer</button>
+
+            </form>
+          </article>
 
     </main>
 
     <footer class="footer">
         <h3>Nous sommes ici dans le footer et plus specialement dans un titre h3</h3>
-        <p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
-        <p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par Stephane Pereck.</p>
+        <p><img src="images/bye.jpg" width=10% height=5%></p>
     </footer>
 
 </body>
