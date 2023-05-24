@@ -138,7 +138,9 @@ body {
   margin-right: 3rem;
   width: 6.5rem;
 }
-
+.assistants {
+  background-color: #fff;
+}
 .assistants article {
   display: flex;
   align-items: center;
