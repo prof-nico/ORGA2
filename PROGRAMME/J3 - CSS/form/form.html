@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Formulaire</title>
+        <link rel="stylesheet" href="./css/form.css">
+    </head>
+    <body>
+        <header>
+            <h1>Formulaire</h1>
+        </header>
+        <div class="form">
+            <form action="#">
+                <div>
+                    <label for="name">Nom:</label>
+                    <input type="text" name="name" id="name" class="input" required>
+                </div>
+                <div>
+                    
+                    <label for="firstname">Prenom:</label>
+                    <input type="text" name="firstname" id="firstname" class="input" required>
+                
+                </div>
+                
+                <div>
+                    <label for="phone">Telephone:</label>
+                    <input type="text" name="phone" id="phone" class="input" pattern="[0-9]{10}" required>    
+                </div>
+                
+                <div>
+                    <label for="birthday">Date de naissance:</label>
+                    <input type="date" name="birthday" id="birthday" class="input" required>    
+                </div>
+                
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" class="input" id="password" pattern="[A-Z]{1}[a-z]{7}" required>    
+                </div>
+                
+                <div class="section abonnement">
+                    <fieldset><legend>Options d'abonnement :</legend> 
+                        <div class="option">
+                            <input type="checkbox" name="newsletter" id="option">
+                            <label for="newsletter" id="label_option">Recevoir la newsletter</label>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" name="promo" id="option">
+                            <label for="option" id="label_option">Recevoir les offres promotionnelles</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="section paiement">
+                    <fieldset><legend>Mode de paiement :</legend> 
+                        <input type="radio" name="paiement" id="carte_bleue" value="cb" checked><label for="carte_bleue">Carte de crédit</label>
+                        <input type="radio" name="paiement" id="paypal" value="paypal"><label for="paypal">Paypal</label>
+                        <input type="radio" name="paiement" id="cheque" value="cheque"><label for="cheque">Cheque</label>
+                    </fieldset>
+                </div>
+                
+                <div class="comment">
+                    <label for="comment">Comment:</label>
+                    <textarea name="comment" id="comment" cols="35" rows="5"></textarea>
+                </div>
+                
+                <div class="button">
+                    <input type="submit" class="submit danger" value="Effacer">
+                    <input type="submit" class="submit send" value="Envoyer">
+                </div>
+            </form>
+        </div>
+        <footer></footer>
+    </body>
+</html>

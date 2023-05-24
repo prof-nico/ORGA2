@@ -1,0 +1,75 @@
+/*** Generic style ***/
+    * {
+        margin: 0;
+    }
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+    header {
+        margin: 20px auto;
+        text-align: center;
+    } 
+    div {
+        margin: 1em;
+    }
+
+/*******************/
+
+/*** form style ***/
+    .form {
+        width: 60%;
+        margin: auto;
+    }
+
+    label{
+        text-align: start;
+    }
+    input {
+        padding: 0.5em;
+    } 
+    .input {
+        width: 100%;
+    }
+
+    input:invalid {
+        border-color: red;
+    }
+    input:valid {
+        border-color: green;
+    }
+
+    .section {
+        width: 97%;
+    }
+    #option:checked #label_option{
+        font-weight: bold;
+    }
+    .option {
+        width: 40%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #paiement {
+        margin-left: 1em;
+    }
+
+/********************/
+
+/*** bouton style ***/
+    .submit{
+        color: white;
+        font-size: 1em;
+        width: 6em;
+        height: 2em;
+        margin-right: 2em;
+        border-radius: 10%;
+        border: 0;
+    }
+    .danger{
+        background-color: red;
+    }
+    .send{
+        background-color: green;
+    }
+/*************/
+
