@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.navabar {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.img h3 span {
+    color: orange;
+    font-weight: bold;
+}
+.img h3 {
+    font-weight: 200;
+}
+
+.nav ul {
+    display: flex;
+}
+.nav ul li {
+    list-style: none;
+    margin-left: 1rem;
+
+}
+.nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: gray;
+}
+
+.nav ul li a:focus {
+    color: aqua;
+}
+/* //////////////// */
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+
+
+
+.left h3 {
+    font-weight: 100;
+    font-size: 30px;
+    color: #52767C;
+}
+
+.left h1 {
+    font-weight: bolder;
+    font-size: 46px;
+    color: #304d52;
+}
+.left p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-weight: lighter;
+    font-size: 20px;
+    color: #52767C;
+}
+
+.left button {
+    border: none;
+    padding: .4rem;
+    height: 3rem;
+    width: 9rem;
+    color: white;
+    background-color: #F77462;
+}
+/* DDDJDDJ */
