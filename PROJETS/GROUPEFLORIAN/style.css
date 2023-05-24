@@ -179,13 +179,6 @@ body {
 * {
   box-sizing: border-box;
 }
-html {
-  font-size: 62.5%;
-}
-body {
-  margin: 0;
-  padding: 0;
-}
 .portable {
   background-image: url(./imagesGui/bg_portable.png);
   height: 40rem;
