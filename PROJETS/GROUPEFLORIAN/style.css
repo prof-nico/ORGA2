@@ -182,7 +182,7 @@ body {
   padding: 0;
 }
 .portable {
-  background-image: url(./images/bg_portable.png);
+  background-image: url(./imagesGui/bg_portable.png);
   height: 40rem;
   display: flex;
 }
