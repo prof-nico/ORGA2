@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Register form</title>
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <h2>formulaire de contact</h2>
+        <form class="form">
+          <label for="text">Nom complet</label>
+          <input type="text" required pattern="[A-Z]" />
+          <label for="text">Adresse Mail</label>
+          <input
+            type="email"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          />
+          <label for="text">Numero de telephone</label>
+          <input
+            type="number"
+            required
+            pattern="[0-9]{5}[-][0-9]{7}[-][0-9]{1}"
+          />
+          <label for="text">Date de naissance</label>
+          <input type="date" required />
+          <label for="text">Password</label>
+          <input
+            type="password"
+            required
+            pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g"
+          />
+
+          <fieldset class="fildset">
+            <legend>Options d'abbonement</legend>
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <label for="">Recevoir la newsletter</label>
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <label for="">Recevoir les offres promotionnelles</label>
+          </fieldset>
+
+          <fieldset class="fildset">
+            <legend>Methodes de payement</legend>
+            <input type="radio" name="radio" id="radio" />
+            <label for="">Carte de credit</label>
+            <input type="radio" name="radio" id="radio" />
+            <label for="">PayPal</label>
+            <input type="radio" name="radio" id="radio" />
+            <label for="">Cheque</label>
+          </fieldset>
+
+          <label for="text">Commentaires</label>
+          <textarea name="long-text" id="text" cols="30" rows="10"></textarea>
+          <section class="btns">
+            <button class="btn">Effacer</button>
+            <button class="btn">Envoyer</button>
+          </section>
+          
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
