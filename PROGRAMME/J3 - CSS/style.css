@@ -1,0 +1,133 @@
+header {
+  background-color: rgba(139, 188, 158, 0.95);
+  height: 3rem;
+}
+
+header > nav {
+  text-transform: uppercase;
+  margin: auto 0;
+  color: white;
+  font-size: 2rem;
+  height: 100%;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+fieldset:invalid > label:first-of-type {
+  color: #e53935 !important;
+}
+form > fieldset,
+input,
+textarea {
+  border-radius: 0.25rem;
+  border: 1px solid rgb(115, 115, 115);
+  margin: 0.5rem 0;
+  text-align: left;
+}
+
+form > input {
+  padding: 1rem;
+}
+
+form > label {
+  text-align: left;
+}
+
+input:invalid + label {
+  color: red;
+  /* border-color: red; */
+}
+/* input:focus:invalid {border: 1px red solid;
+    color: red;
+
+} */
+
+input:required {
+  border-color: red;
+}
+/* label:has(+ input:invalid){
+    color: red;
+} */
+input:valid +
+label {
+  /* border-color: rgb(72, 197, 40); */
+  color: rgb(72, 197, 40);
+}
+
+fieldset {
+  display: flex;
+  justify-content: space-around;
+}
+textarea {
+  height: 5rem;
+}
+button {
+  width: 12rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+
+/* CSS */
+.button-1 {
+  background-color: #4cea91;
+}
+.button-2 {
+  background-color: #e24747;
+}
+.button-1,
+.button-2 {
+  /* background-color: #EA4C89; */
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #86f4b6;
+}
+.button-2:hover,
+.button-2:focus {
+  background-color: #e36666;
+}
+
+@media only screen and (max-width: 600px) {
+  /* body {
+      background-color: lightblue;
+    } */
+  main {
+    width: 100%;
+  }
+}
