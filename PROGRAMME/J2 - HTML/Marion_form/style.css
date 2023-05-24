@@ -1,8 +1,153 @@
 * {
-    margin: 0;
+  margin: 0;
 }
 
 html {
-    font-size: 62.5%;
-    box-sizing: border-box;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: sans-serif;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+form {
+  margin: 5rem auto;
+}
+
+legend {
+  font-style: italic;
+  color: #999;
+  font-weight: normal;
+}
+
+fieldset {
+  border: 1px solid #999;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 3rem;
+}
+
+fieldset > div {
+  margin-top: 2rem;
+  width: 50%;
+}
+
+fieldset > div > label,
+p {
+  margin-right: 1rem;
+  font-size: 1.8rem;
+}
+
+input,
+textarea,
+select {
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding: 0.5rem;
+  /* display: flex;
+  flex-flow: row; */
+  margin-right: 2rem;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.row {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-flow: row;
+  color: #333;
+}
+
+.liste {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.liste label {
+  font-size: 1.6rem;
+  margin-top: 0.7rem;
+  margin-right: 2rem;
+}
+
+.liste input {
+  margin-right: 0.5rem;
+  width: auto;
+}
+
+input:valid {
+  border-color: green;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input::selection {
+  border: 2px solid black;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+  font-weight: bold;
+  color: black;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  width: 10rem;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: 2rem auto;
+  cursor: pointer;
+}
+
+#warningpassword {
+  margin-top: 0.3rem;
+  font-size: 1.4rem;
+  color: #555;
+  font-style: italic;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  form {
+    margin: 3rem;
+  }
+
+  fieldset {
+    padding: 2rem;
+  }
+
+  fieldset > div {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  form {
+    margin: 1.5rem;
+  }
+
+  fieldset {
+    padding: 1rem;
+  }
+
+  fieldset > div {
+    width: 90%;
+  }
+
+  .row {
+    flex-direction: column;
+    margin-left: 2rem;
+  }
 }

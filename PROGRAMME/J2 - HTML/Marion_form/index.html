@@ -1,78 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulaire</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <form action="form.php" method="post">
-        <legend>Veuillez remplir ce formulaire pour prendre rendez-vous</legend>
       <fieldset>
-        <label for="prenom">Prénom</label>
-        <input type="text" name="prenom" id="prenom" required focus />
-
-        <label for="nom">Nom</label>
-        <input type="text" name="nom" id="nom" required />
-
-        <p>Genre</p>
-        <label for="Homme">Homme</label>
-        <input type="radio" name="genre" id="Homme" value="Homme" />
-        <label for="Femme">Femme</label>
-        <input type="radio" name="genre" id="Femme" value="Femme" />
-        <label for="Autre">Autre</label>
-        <input type="radio" name="genre" id="Autre" value="Autre" />
-
-        <label for="birthday">Date de naissance</label>
-        <input
-          type="text"
-          name="birthday"
-          id="birthday"
-          required
-          pattern="^(0?[1-9]|[12][0-9]|3[01])/(0?[1-9]|[1][0-2])/[0-9]+$"
-          placeholder="01/01/1990"
-        />
-
-        <label for="telephone">Numéro de téléphone</label>
-        <input type="tel" name="telephone" id="telephone" required />
-
-        <label for="email">Adresse email</label>
-        <input type="email" name="email" id="email" required />
-
-        <label for="password">Mot de passe</label>
-        <input type="password" name="password" id="password" required />
-
-        <p>Créneaux horaires où vous souhaitez prendre rdv</p>
-        <label for="8-10">8h-10h</label>
-        <input type="checkbox" name="creneaux" id="8-10" value="8-10" />
-        <label for="10-12">10h-12h</label>
-        <input type="checkbox" name="creneaux" id="10-12" value="10-12" />
-        <label for="13-15">13h-15h</label>
-        <input type="checkbox" name="creneaux" id="13-15" value="13-15" />
-        <label for="15-17">15h-17h</label>
-        <input type="checkbox" name="creneaux" id="15-17" value="15-17" />
-
-        <label for="animal">Votre animal</label>
-        <select name="animal" id="animal" required>
-          <option value="">
-            --Veuillez choisir l'espèce de votre animal--
-          </option>
-          <option value="Chien">Chien</option>
-          <option value="Chat">Chat</option>
-          <option value="NAC">NAC</option>
-        </select>
-
-        <textarea
-          name="message"
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Votre message"
-        ></textarea>
+        <legend>Veuillez remplir ce formulaire pour prendre rendez-vous</legend>
+        <div>
+          <label for="prenom">Prénom</label>
+          <input type="text" name="prenom" id="prenom" required autofocus pattern="^[A-Za-z]{3,25}$" />
+        </div>
+        <div>
+          <label for="nom">Nom</label>
+          <input type="text" name="nom" id="nom" required pattern="^[A-Za-z]{3,25}$"/>
+        </div>
+        <div>
+          <p>Genre</p>
+          <div class="row">
+            <div class="liste">
+              <input type="radio" name="genre" id="Homme" value="Homme" required/>
+              <label for="Homme">Homme</label>
+            </div>
+            <div class="liste">
+              <input type="radio" name="genre" id="Femme" value="Femme" required/>
+              <label for="Femme">Femme</label>
+            </div>
+            <div class="liste">
+              <input type="radio" name="genre" id="Autre" value="Autre" required/>
+              <label for="Autre">Autre</label>
+            </div>
+          </div>
+        </div>
+        <div>
+          <label for="birthday">Date de naissance</label>
+          <input
+            type="date"
+            name="birthday"
+            id="birthday"
+            required
+          />
+        </div>
+        <div>
+          <label for="telephone">Numéro de téléphone</label>
+          <input type="tel" name="telephone" id="telephone" required pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$"/>
+        </div>
+        <div>
+          <label for="email">Adresse email</label>
+          <input type="email" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+        </div>
+        <div>
+          <label for="password">Mot de passe</label>
+          <input type="password" name="password" id="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" />
+          <p id="warningpassword">Le mot de passe doit contenir au moins 8 caractères dont au moins une majuscule, une minuscule, un chiffre et un caractère spécial.</p>
+        </div>
+        <div>
+          <p>Créneaux horaires où vous souhaitez prendre rdv :</p>
+          <div class="row">
+            <div class="liste">
+              <input type="checkbox" name="creneaux" id="8-10" value="8-10" />
+              <label for="8-10">8h-10h</label>
+            </div>
+            <div class="liste">
+              <input type="checkbox" name="creneaux" id="10-12" value="10-12" />
+              <label for="10-12">10h-12h</label>
+            </div>
+            <div class="liste">
+              <input type="checkbox" name="creneaux" id="13-15" value="13-15" />
+              <label for="13-15">13h-15h</label>
+            </div>
+            <div class="liste">
+              <input type="checkbox" name="creneaux" id="15-17" value="15-17" />
+              <label for="15-17">15h-17h</label>
+            </div>
+          </div>
+        </div>
+        <div>
+          <label for="animal">Votre animal</label>
+          <select name="animal" id="animal" required>
+            <option value="">
+              --Veuillez choisir l'espèce de votre animal--
+            </option>
+            <option value="Chien">Chien</option>
+            <option value="Chat">Chat</option>
+            <option value="NAC">NAC</option>
+          </select>
+        </div>
+        <div>
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Votre message"
+          ></textarea>
+        </div>
 
         <button type="submit">Envoyer</button>
       </fieldset>
     </form>
-</body>
+  </body>
 </html>
