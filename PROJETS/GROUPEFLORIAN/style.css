@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #header {
   height: 10rem;
   background-color: #ffffff;
@@ -72,3 +73,100 @@ footer {
   font-size: 15px;
   color: #ffffff;
 }
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5rem;
+    background-image: url("images/fond.png");
+    background-repeat: repeat;
+    padding: 6rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+.bandeBleue {
+    color: white;
+    width: 100%;
+    background-color: #6dc5dd;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bandeBleue div {
+    width: 90%;
+    padding: 6rem 3rem;
+}
+
+.bandeBleue p {
+    line-height: 2.8rem;
+    margin-bottom: 3rem;
+}
+
+.bandeBleue a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.bandeBleue i {
+    font-size: 1.8rem;
+    margin-left: 1rem;
+}
+
+.drapeau, .maison, .appareilPhoto {
+    display: flex;
+    align-items: flex-start;
+}
+
+.bandeBleue img {
+    margin-right: 3rem;
+    width: 6.5rem;
+}
+.assistants {
+    display: flex;
+    flex-direction: column;
+}
+.assistants article {
+    display: flex;
+    gap: 4rem;
+    padding: 5rem 25rem;
+}
+.assistants h2 {
+    color: #003d48;
+    font-size: 2rem;
+    
+}
+.assistants p {
+    color: #8c9193;
+    font-size: 1.5rem;
+}
+.assistants button {
+    width: 6rem;
+    height: 3rem;
+    font-size: 1rem;
+    background-color: #f77462;
+    color: white;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+.assistants button:hover {
+    background-color: #f7533d;
+}
+>>>>>>> 315679d2cb6f3d4393de23c45b2da48660d66ced
