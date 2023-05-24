@@ -93,10 +93,31 @@ input::selection {
   border: 2px solid black;
 }
 
+fieldset
+  > div:has(
+    input[type="text"]:valid,
+    input[type="tel"]:valid,
+    input[type="email"]:valid,
+    input[type="date"]:valid,
+    input[type="password"]:valid,
+    select:valid
+  )
+  label,
+fieldset
+  > div:has(input[type="radio"]:valid, input[type="checkbox"]:valid)
+  > p {
+  color: green;
+}
+
 input[type="checkbox"]:checked + label,
 input[type="radio"]:checked + label {
   font-weight: bold;
   color: black;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
 }
 
 button {
@@ -110,14 +131,18 @@ button {
   cursor: pointer;
 }
 
+button[type="reset"] {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #333;
+}
+
 #warningpassword {
   margin-top: 0.3rem;
   font-size: 1.4rem;
   color: #555;
   font-style: italic;
 }
-
-
 
 @media screen and (max-width: 1200px) {
   form {
