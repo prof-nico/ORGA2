@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Regular.ttf') format('ttf');
+  }
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 600; /* 600 correspond à "semi-bold" */
+    font-style: normal;
+    src: url('fonts/OpenSans-SemiBold.ttf') format('ttf');
+  }
+  
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 400; /* 400 correspond à "regular" */
+    font-style: italic;
+    src: url('fonts/OpenSans-Italic.ttf') format('ttf');
+  }
+  
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 700; /* 700 correspond à "bold" */
+    font-style: italic;
+    src: url('fonts/OpenSans-BoldItalic.ttf') format('ttf');
+  }
+
+
+/* Utilisation de la police personnalisée dans le CSS */
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Adjust the height as needed */
+}
+
+.box_input {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.text_input {
+    width: 50em;
+    height: 2em;
+}
+
+.checks_boxes {
+    margin-bottom: 1rem;
+    display: flex;
+    border: 0.1em solid #ccc;
+    padding: 10px;
+}
+
+
+
+  
+  .box_title {
+    font-weight: bold;
+    margin-bottom: 0.1em;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .checkbox-container input[type="checkbox"],
+  .checkbox-container label {
+    margin-bottom: 5px;
+  }

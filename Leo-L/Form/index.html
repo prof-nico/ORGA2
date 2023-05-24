@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exo form</title>
+    <meta name="" description="" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/b284a4a6be.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+
+    <div class="box_input">
+        <label for="name">Nom complet</label>
+        <input type="text" id="name" name="name" class="text_input">
+    </div>
+
+    <div class="box_input">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" class="text_input" required>
+    </div>
+
+    <div class="box_input">
+        <label for="password">Mot de passe:</label>
+        <input type="password" id="password" name="password" class="text_input" required>
+    </div>
+
+
+    <div class="box_input">
+        <label for="tel">Numero de telephone:</label>
+        <input type="tel" id="tel" name="tel" class="text_input">
+    </div>
+
+    <div class="box_input">
+        <label for="date">Date de naissance:</label>
+        <input type="date" id="date" name="date" class="text_input">
+    </div>
+
+    <p>Moyen de paiement:</p>
+    <div class="checks_boxes">
+        <input type="radio" id="payment_method" name="payment_method" required>
+        <label for="payment_method">Carte de credit</label>
+        <input type="radio" id="payment_method" name="payment_method" required>
+        <label for="payment_method">Visa</label>
+        <input type="radio" id="payment_method" name="payment_method" required>
+        <label for="payment_method">Paypal</label>
+    </div>
+
+    <div class="checks_boxes">
+        <label class="box_title">Options d'abonnement:</label>
+        <div class="checkbox-container">
+            <input type="checkbox" id="Sub_options" name="Sub_options" />
+            <label for="Sub_options">Recevoir la newsletter</label>
+            <input type="checkbox" id="Sub_options" name="Sub_options" /> 
+            <label for="Sub_options">Recevoir des offres promotionelles</label>
+        </div>
+    </div>
+
+    <div class="box_input">
+        <label for="Commentaires">Commentaires:</label>
+        <input type="text" id="Commentaires" name="Commentaires">
+    </div>
+
+
+  </body>
