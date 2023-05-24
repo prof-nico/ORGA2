@@ -11,6 +11,9 @@ html {
 body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.5rem;
+    background-image: url("images/fond.png");
+    background-repeat: repeat;
+    padding: 6rem;
 }
 
 h2 {
