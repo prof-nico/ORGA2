@@ -1,17 +1,34 @@
 
+  input[type=radio]:checked + label{font-weight: bold}
+  
+  
   input:invalid {
     border-color: 2px red;
+    /*box-shadow: 0 0 5px 1px red;*/
+
   }
   
   input:valid {
     border-color: 1px solid rgb(25, 241, 10);
   }
 
-  .but {
+
+
+  .envoyer {
 	background: #0eda29;
 	color: #080808;
 	border-style: outset;
 	border-color: #66f062;
+	/*height: 50px;
+	width: 100px;*/
+	font: bold15px arial,sans-serif;
+	text-shadow: none;
+}
+.effacer{
+	background: rgb(242, 116, 116);
+	color: black;
+	border-style: outset;
+	border-color: rgb(242, 116, 116);
 	/*height: 50px;
 	width: 100px;*/
 	font: bold15px arial,sans-serif;
