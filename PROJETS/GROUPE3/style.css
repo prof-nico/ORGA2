@@ -50,6 +50,7 @@ form input:valid{
 }
 
 .fildset {
+    display: flex;
     margin-top: 1rem;
    margin-bottom: 1rem;
    padding: .2rem;
@@ -57,8 +58,8 @@ form input:valid{
 }
 .fildset label {
     display: inline-block;
-    margin-left: 3px;
-    
+    margin-left: .5rem;
+    margin-right: .5rem;
 }
 
 .btns {
