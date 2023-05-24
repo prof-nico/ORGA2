@@ -52,14 +52,19 @@ textarea {
     border-radius: 5px;
 }
 input:required {
-    border: 1px solid black;
+    border: 1px solid green;
 }
 input:invalid {
-    background-color: rgb(250, 152, 152);
+    border: 1px solid red;
 }
 input:checked + label {
     color: #000;
 }
+/*
+Ne fonctionne pas sur Firefox mais permet de mettre en rouge le label qui est suivi d'un input invalid
+label:has(+ input:invalid) {
+    color:red;
+}*/
 .button {
     width: 7rem;
     padding: 0.8rem 1.5rem;
