@@ -20,10 +20,10 @@ p {
     color: $color;
 }
 button {
-    display: flex;
+    @include display();
 
 }
-div {
+.socials {
     @include display();
     align-items: center;
     padding: 0;
