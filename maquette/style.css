@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+}
+header {
+  padding: 0 2rem;
+}
+header > nav {
+  height: 4rem;
+  background-color: #fff;
+}
+nav > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav > li {
+  font-size: 16px;
+  color: #6dc5dd;
+  font-weight: 700;
+  font-family: "Source Sans Pro";
+  list-style: none;
+  display: inline;
+}
+.nav {
+  word-spacing: 4em;
+}
+section > .banner {
+  background-image: linear-gradient(0deg, #ffffff 0%, #e7e7e7 100%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 8rem;
+}
+.banner p {
+  font-size: 18px;
+  color: #8b8b8b;
+  font-weight: 400;
+  font-family: "Source Sans Pro";
+}
+.banner h1 {
+  font-size: 31px;
+  color: #003d48;
+  font-weight: 300;
+  font-family: "Source Sans Pro";
+}
+button {
+  width: 129px;
+  height: 44px;
+  border-radius: 3px;
+  background-color: #f77462;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.banner > div {
+  width: 50%;
+  margin: 0 auto;
+}
+section > .row1 {
+  height: 270px;
+  background-color: #6dc5dd;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.row1 h4,
+p {
+  line-height: 24px;
+  color: #ffffff;
+  font-family: "Source Sans Pro";
+}
+.row1 p {
+  font-size: 15px;
+  font-weight: 300;
+}
+.row1 h4 {
+  font-size: 20px;
+}
+.row1 a {
+  text-decoration: none;
+  font-weight: 500;
+}
+.row1-container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+.row1-container span {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+}
+.row1-container img {
+  width: 2rem;
+  height: 2rem;
+}
+.row1-container div {
+  width: 60%;
+}
+section > .row2 {
+  padding: 3rem 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+}
+.row2 > img {
+  height: 189px;
+  width: 189px;
+}
+.row2 h4 {
+  font-size: 18px;
+  line-height: 29px;
+  color: #003d48;
+  font-weight: 700;
+  font-family: "Source Sans Pro";
+}
+.row2 p {
+  /* width: 752px;
+  height: 112px; */
+  font-size: 15px;
+  line-height: 24px;
+  color: #8c9193;
+  font-weight: 400;
+  font-family: "Source Sans Pro";
+}
+.row2-container {
+  display: flex;
+  justify-content: space-around;
+}
+.row2-container div {
+  width: 60%;
+}
+.row2-container span {
+  width: 220px;
+  height: 220px;
+  overflow: hidden;
+}
+footer {
+  background-color: #6dc5dd;
+  height: 4rem;
+  padding: 1rem;
+}
