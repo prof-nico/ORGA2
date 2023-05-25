@@ -1,0 +1,23 @@
+footer {
+    background-color: #6dc5dd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 59px; /* Adjust the height as needed */
+    padding: 0 20px; /* Add padding for spacing */
+  }
+  
+  #logos_RS {
+    display: flex;
+    align-items: center;
+  }
+  
+  #logos_RS img {
+    border-radius: 50%;
+    margin-left: 10px; /* Add margin only to the left side */
+  }
+  
+  #copyright {
+    margin: 0; /* Remove default margin */
+    color: white;
+  }
