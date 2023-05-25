@@ -34,3 +34,78 @@ $secondary-color: #ee1d52;
   height: 100%;
   background-color: lightblue;
 }
+
+// Section 2
+
+.section2 {
+  display: flex;
+}
+
+// Section 3
+
+.section3 {
+  padding: 0.5rem;
+  background-color: white;
+
+  h2 {
+    color: black;
+  }
+
+  div {
+    display: flex;
+
+    figure {
+      margin-right: 0.5rem;
+
+      figcaption {
+        padding: 0.5rem;
+        color: black;
+      }
+    }
+  }
+
+  a {
+    display: block;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+  }
+}
+
+// Section 4
+
+$font: Helvetica Neue;
+$color: #000000;
+
+@mixin display($justify: center) {
+  display: flex;
+  flex-direction: row;
+  justify-content: $justify;
+}
+
+footer {
+  h2 {
+    font-family: $font;
+    color: rgba($color, 0.5);
+    span {
+      color: $color;
+    }
+  }
+  p {
+    font-family: $font;
+    color: $color;
+  }
+  button {
+    @include display();
+  }
+  .socials {
+    @include display();
+    align-items: center;
+    padding: 0;
+    gap: 50px;
+    a {
+      width: 111px;
+      height: 111px;
+    }
+  }
+}
