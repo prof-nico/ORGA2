@@ -12,7 +12,6 @@ $gray: rgba(0, 0, 0, 0.5);
 
 @mixin titleH2() {
   font-size: 60px;
-  color: $gray;
   font-weight: 500;
 }
 
@@ -22,23 +21,202 @@ $gray: rgba(0, 0, 0, 0.5);
   font-weight: 300;
 }
 
-@mixin buttonPrimary() {
-  width: 273px;
-  height: 56px;
-  background: $secondary;
-  color: #fff;
+@mixin button() {
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
   border-radius: 10px;
-}
-
-@mixin buttonSecondary() {
-  width: 273px;
-  height: 56px;
-  background: #fff;
-  color: $secondary;
-  border-radius: 10px;
+  border: none;
+  cursor: pointer;
 }
 
 body {
   margin: 0;
   font: 100% $font-stack;
+}
+
+.container {
+  background-color: $primary;
+  padding: 0 3rem;
+
+  .container-box {
+    margin: 0 auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container-text {
+    width: 50%;
+  }
+
+  img {
+    height: 600px;
+    position: relative;
+  }
+
+  .container-buttons {
+    display: flex;
+    justify-content: space-between
+  }
+}
+
+.button_primary {
+  @include button;
+  background: $secondary;
+  color: #fff;
+
+  p {
+    margin: 0 !important;
+  }
+
+  // :hover {
+  //   color: $secondary;
+  //   background: #fff
+  // }
+}
+
+.button_secondary {
+  @include button;
+  color: $secondary;
+
+  p {
+    margin: 0 !important;
+  }
+
+  // &:hover {
+  //   color: #fff;
+  //   border: 1px solid $secondary;
+  //   background: $secondary
+  // }
+}
+
+.title {
+  @include titleH1;
+  margin-bottom: 0;
+}
+
+.description {
+  @include textP;
+}
+
+.title2 {
+  @include titleH2;
+  color: $gray;
+
+  & span {
+    color: black;
+  }
+
+  & p {
+    max-width: 60%;
+  }
+}
+
+.title3 {
+  @include titleH2;
+  color: $secondary;
+  text-align: center;
+}
+
+.row1 {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem 0;
+
+  .row1-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .row1-img {
+    width: 40%;
+    margin: auto 0;
+  }
+
+  .row1-text {
+    width: 50%;
+    text-align: right;
+  }
+
+  img {
+    width: 100%
+  }
+}
+
+.row2 {
+  background-color: $primary;
+  display: flex;
+  flex-direction: column;
+
+  .row2-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  a {
+    text-decoration: none;
+    text-align: center;
+    color: #721B65;
+
+    p {
+      font-size: 18px;
+      padding: 2rem;
+      margin: 0;
+    }
+  }
+
+  .row2-details {
+    position: relative;
+
+    img {
+      height: 400px;
+    }
+
+    .text-box {
+      position: absolute;
+      bottom: 0;
+      background-color: $secondary;
+      margin: 0;
+      padding: 1rem 3rem;
+      line-height: 1.75rem;
+      color: #fff;
+      font-size: 18px;
+    }
+  }
+}
+
+.lastSection {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  padding: 3rem 0;
+
+  h2 {
+    text-align: left;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  button {
+    p {
+      text-align: center;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  margin-top: 1em;
+
+  img {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: 4rem;
+  }
 }
