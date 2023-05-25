@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.portable {
+    background-image: url(./images/bg_portable.png);
+    height: 40rem;
+    display: flex;
+}
+.portable div {
+    width: 40rem;
+}
+.portable h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: #003D48;
+    font-weight: bold;
+    margin: 1rem 0 2rem 0;
+}
+.portable h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    padding-top: 8rem;
+    margin: 0;
+    color: #003D48;
+}
+.portable p {
+    font-size: 1.5rem;
+    color: #8B8B8B;
+}
+.portable img {
+    margin: 5rem 10.5rem 0 10rem;
+}
+.portable .button {
+    display: inline-block;
+
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #F77665;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    border: none;
+    border-radius: 3px;
+
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+}

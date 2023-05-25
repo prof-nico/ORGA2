@@ -1,0 +1,225 @@
+#header {
+  height: 10rem;
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 15%;
+}
+
+.site-name {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+}
+
+.caption {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  color: #929292;
+}
+
+.site {
+  font-weight: bold;
+}
+
+#nav {
+  width: 50%;
+  padding: 20px;
+}
+
+#nav > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#nav > ul > li {
+  list-style-type: none;
+}
+
+#nav > ul > li > a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #787878;
+}
+
+footer {
+  height: 7rem;
+  width: 100%;
+  background-color: #6dc5dd;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer-text {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.5rem;
+  background-image: url('images/fond.png');
+  background-repeat: repeat;
+  padding: 6rem;
+  line-height: 2.8rem;
+  max-width: 1290px;
+  margin: 0 auto;
+}
+
+.bandeBleue h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+.bandeBleue {
+  color: white;
+  width: 100%;
+  background-color: #6dc5dd;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bandeBleue div {
+  width: 90%;
+  padding: 6rem 3rem;
+}
+
+.bandeBleue p {
+  margin-bottom: 3rem;
+}
+
+.bandeBleue a {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.bandeBleue i {
+  font-size: 1.8rem;
+  margin-left: 1rem;
+}
+
+.drapeau,
+.maison,
+.appareilPhoto {
+  display: flex;
+  align-items: flex-start;
+}
+
+.bandeBleue img {
+  margin-right: 3rem;
+  width: 6.5rem;
+}
+.assistants {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.assistants article {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 5rem 10rem;
+}
+.assistants h2 {
+  color: #003d48;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.assistants p {
+    color: #8c9193;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.assistants button {
+  margin-top: 2rem;
+  width: 7rem;
+  height: 3.8rem;
+  font-size: 1rem;
+  background-color: #f77462;
+  color: white;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.assistants button:hover {
+  background-color: #f7533d;
+}
+
+* {
+  box-sizing: border-box;
+}
+.portable {
+  background-image: url(./imagesGui/bg_portable.png);
+  height: 40rem;
+  display: flex;
+}
+.portable div {
+  width: 40rem;
+}
+.portable h1 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: #003d48;
+  font-weight: bold;
+  margin: 1rem 0 2rem 0;
+}
+.portable h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  padding-top: 8rem;
+  margin: 0;
+  color: #003d48;
+}
+.portable p {
+  font-size: 1.5rem;
+  color: #8b8b8b;
+}
+.portable img {
+  margin: 5rem 10.5rem 0 10rem;
+}
+.portable .button {
+  display: inline-block;
+
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #f77665;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: none;
+  border-radius: 3px;
+
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+}
