@@ -1,16 +1,21 @@
 
   input[type=radio]:checked + label{font-weight: bold}
   
-  
+ label:has(+input:invalid){
+    color:red
+ }
+
   input:invalid {
     border-color: 2px red;
     /*box-shadow: 0 0 5px 1px red;*/
 
   }
   
-  input:valid {
+  input:required {
     border-color: 1px solid rgb(25, 241, 10);
   }
+
+
 
   .envoyer {
 	background: #0eda29;
