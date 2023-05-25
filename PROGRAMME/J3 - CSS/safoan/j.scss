@@ -1,0 +1,125 @@
+$headercolor: #ffd868;
+$importantColor: #721b65;
+$fontFamily: sans-serif;
+$secondary: #00000070;
+
+%height {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin buttons($color: $headercolor) {
+  background-color: $color;
+  box-shadow: 0 0 10px rgba($color, 0.5);
+  color: $importantColor;
+  border: none;
+  border-radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $fontFamily;
+}
+
+header {
+  background-color: $headercolor;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+    h1 {
+      color: $importantColor;
+      font-size: 5rem;
+    }
+
+    p {
+      color: $importantColor;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+  }
+
+  .btns {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    gap: 1rem;
+
+    button {
+      width: 100%;
+      padding: 1rem;
+    }
+
+    .one {
+      @include buttons($color: #ffffff);
+    }
+    .two {
+      @include buttons($color: $importantColor);
+      color: white;
+    }
+  }
+}
+
+main {
+  section {
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    .text {
+      text-align: end;
+      padding: 1rem;
+      width: 40%;
+      h2 {
+        color: $secondary;
+        font-size: 3rem;
+        span {
+          color: black;
+        }
+      }
+      p {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+      }
+      button {
+        @include buttons($importantColor);
+        margin-top: 1rem;
+        color: white;
+        width: 30%;
+        padding: 0.7rem;
+      }
+    }
+  }
+
+  .second {
+    background-color: $headercolor;
+    @extend %height;
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: $importantColor;
+    }
+    .container {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    p {
+      margin-top: 2rem;
+      color: $importantColor;
+      font-weight: bold;
+    }
+  }
+}
