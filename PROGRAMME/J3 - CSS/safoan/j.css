@@ -58,6 +58,9 @@ header .btns .two {
   color: white;
 }
 
+main {
+  margin-bottom: 3rem;
+}
 main section {
   padding: 3rem;
   display: flex;
@@ -109,4 +112,73 @@ main .second p {
   margin-top: 2rem;
   color: #721b65;
   font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  margin: 0 auto;
+  gap: 8rem;
+}
+.footer .footerHaut {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footerHaut button {
+  align-self: center;
+}
+.footer div.cercles {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+.footer div.cercle {
+  width: 8rem;
+  height: 8rem;
+  background-color: #221B72;
+  border-radius: 50%;
+  position: relative;
+}
+.footer div.cercle img {
+  width: 70%;
+  position: absolute;
+  top: 1.2rem;
+  left: 1.2rem;
+}
+
+h1 {
+  color: #221B72;
+  font-size: 5rem;
+}
+
+h2 {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 3rem;
+}
+h2 span {
+  color: rgb(0, 0, 0);
+}
+
+p {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.bouton2, .bouton1 {
+  width: 30rem;
+  height: 4rem;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+
+.bouton1 {
+  background-color: #fff;
+  color: #221B72;
+}
+
+.bouton2 {
+  background-color: #221B72;
+  color: #fff;
 }/*# sourceMappingURL=j.css.map */

@@ -1,3 +1,5 @@
+@use 'variables';
+
 $headercolor: #ffd868;
 $importantColor: #721b65;
 $fontFamily: sans-serif;
@@ -70,6 +72,7 @@ header {
 }
 
 main {
+    margin-bottom: 3rem;
   section {
     padding: 3rem;
     display: flex;
@@ -122,4 +125,79 @@ main {
       font-weight: bold;
     }
   }
+}
+
+// FOOTER
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    margin: 0 auto;
+    gap: 8rem;
+
+    .footerHaut {
+        display: flex;
+        flex-direction: column;
+
+        button {
+            align-self: center;
+        }
+    }
+    
+    div.cercles {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+    }
+    div.cercle {
+        width: 8rem;
+        height: 8rem;
+        background-color: variables.$color1;
+        border-radius: 50%;
+        position: relative;
+
+        img {
+            width: 70%;
+            position: absolute;
+            top: 1.2rem;
+            left: 1.2rem;
+        }
+    }
+}
+
+h1 {
+    color: variables.$color1;
+    font-size: 5rem;
+}
+
+h2 {
+    color: variables.$color5;
+    font-size: 3rem;
+
+    span {
+        color: variables.$color6;
+    }
+}
+
+p {
+    font-size: 1.5rem;
+    color: variables.$color3;
+}
+%modeleBouton {
+    width: 30rem;
+    height: 4rem;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+}
+.bouton1 {
+    @extend %modeleBouton;
+    background-color: variables.$color4;
+    color: variables.$color1;
+}
+.bouton2 {
+    @extend %modeleBouton;
+    background-color: variables.$color1;
+    color: variables.$color4;
 }
