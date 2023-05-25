@@ -1,0 +1,36 @@
+// Variables
+
+$primary-color: #69c9d0;
+$secondary-color: #ee1d52;
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 814px;
+  background-color: $primary-color;
+}
+
+.bloc-gauche {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background-color: #69c9d0;
+}
+
+.frame125 {
+  width: 570px;
+  height: 501;
+  background-color: lightcyan;
+}
+
+.bloc-droit {
+  width: 50%;
+  height: 100%;
+  background-color: lightblue;
+}
