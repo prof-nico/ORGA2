@@ -1,0 +1,147 @@
+/*Global*/
+.math h2, .leo h2, .aym h2 {
+  font-size: 60px;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+section {
+  padding: 0 100px;
+}
+
+p {
+  font-size: 20px;
+}
+
+button {
+  color: #fff;
+  background-color: #721B65;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  width: 239px;
+}
+
+button:hover {
+  background-color: #fff;
+  box-shadow: 1px 2px 2px #721B65;
+  color: #721B65;
+  font-weight: bold;
+}
+
+/*Thomas*/
+.thomas {
+  display: flex;
+  background-color: #FFD868;
+  align-items: center;
+  justify-content: center;
+}
+.thomas div {
+  width: 49%;
+  margin: 0.25%;
+}
+.thomas .col1 {
+  margin: 0.25% 5%;
+  justify-content: center;
+}
+.thomas .col1 h2 {
+  color: #721B65;
+  font-size: 80px;
+}
+.thomas .col1 .whiteButton {
+  color: #721B65;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  width: 239px;
+}
+.thomas .col1 .centerBtn {
+  display: inline-block;
+  text-align: center;
+  margin-top: 60px;
+}
+
+/*Aymeric*/
+.aym {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.aym img {
+  float: left;
+}
+.aym .aym-text {
+  margin: 60px;
+}
+.aym h2 {
+  font-family: Helvetica, sans-serif;
+  color: #989898;
+  text-align: right;
+}
+.aym h2 b {
+  color: black;
+}
+.aym p {
+  margin-bottom: 60px;
+  text-align: right;
+  font-family: Helvetica, sans-serif;
+}
+.aym button {
+  margin-top: 100px;
+}
+
+/*Leo*/
+.leo {
+  display: flex;
+  background-color: #FFD868;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+  padding-right: 0px;
+  padding-bottom: 20px;
+}
+.leo h2 {
+  color: #721B65;
+  font-family: Helvetica, sans-serif;
+  font-size: 60px;
+}
+.leo .images_gallery {
+  margin-top: 40px;
+}
+.leo p {
+  color: #721B65;
+  margin-top: 40px;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+/*Mathieu*/
+.math h2 {
+  color: #808080;
+}
+.math h2 strong {
+  color: black;
+}
+
+.math_center {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin: 134px;
+}
+.footer a {
+  margin: 5px;
+}/*# sourceMappingURL=style.css.map */

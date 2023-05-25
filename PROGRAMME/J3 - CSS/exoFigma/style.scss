@@ -1,0 +1,161 @@
+/*Global*/
+$font-stack: Helvetica, sans-serif;
+$background-base : #FFD868;
+$purpleColor : #721B65;
+
+@mixin buttonColor($color: $purpleColor, $txtColor: #fff, $width : 239px){
+    color:$txtColor;
+    background-color: $color;
+    padding: 10px;
+    border-radius: 5px;
+    border:none;
+    font-size: 20px;
+    width: $width;
+}
+
+%classic_h2 {
+    font-size: 60px;
+}
+
+body {
+    margin: 0;
+    font-family: $font-stack;
+}
+section {
+    padding: 0 100px;
+}
+p {
+    font-size: 20px;
+}
+button {
+    @include buttonColor($purpleColor, #fff);
+}
+button:hover {
+    background-color: #fff;
+    box-shadow: 1px 2px 2px #721B65;
+    color: #721B65;
+    font-weight: bold;
+}
+
+/*Thomas*/
+.thomas {
+    display: flex;
+    background-color: $background-base ;
+    align-items: center;
+    justify-content: center;
+    
+    div{
+        width:49%;
+        margin: 0.25%;
+    }
+
+    .col1{
+        margin: 0.25% 5%;
+        justify-content: center;
+        h2{
+            color: $purpleColor;
+            font-size: 80px;
+        }
+    
+        .whiteButton{
+            @include buttonColor(#ffffff, $purpleColor);
+        }
+
+        .centerBtn{
+            display: inline-block;
+            text-align: center;
+            margin-top: 60px;
+        }
+    }
+}
+
+/*Aymeric*/
+
+.aym {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    img {
+        float:left;
+    }
+    .aym-text {
+        margin: 60px;
+    }
+    h2 {
+        @extend %classic_h2;
+        font-family: $font-stack;
+        color:#989898;
+        text-align: right;
+        b {
+            color:black
+        }
+    }
+    p {
+        margin-bottom: 60px;
+        text-align: right;
+        font-family: $font-stack;
+    }
+    button {
+        margin-top:100px;
+    }
+
+}
+/*Leo*/
+
+.leo {
+    display: flex;
+    background-color: $background-base;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    h2 {
+        @extend %classic_h2;
+        color: $purpleColor;
+        font-family: $font-stack;
+        font-size: 60px;
+    }
+
+
+    .images_gallery {
+        margin-top: 40px;
+    }
+
+    p {
+        color: $purpleColor;
+        margin-top: 40px;
+        font-family: $font-stack;
+        font-size: 1.25em;
+        font-weight: bold;
+    }
+
+
+    
+}
+
+/*Mathieu*/
+
+.math {
+    h2 {
+        @extend %classic_h2;
+        color: #808080;
+        strong {
+            color: black;
+        }
+    } 
+}
+.math_center {
+    margin-top: 60px;
+    text-align: center;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    margin: 134px;
+    a {
+        margin: 5px;
+    }
+}
