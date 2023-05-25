@@ -1,7 +1,7 @@
 // Variables
 
-$primary-color: #69c9d0;
-$secondary-color: #ee1d52;
+$primary-color: #ffd868;
+$secondary-color: #721b65;
 
 .header {
   display: flex;
@@ -20,7 +20,7 @@ $secondary-color: #ee1d52;
   align-items: center;
   width: 50%;
   height: 100%;
-  background-color: #69c9d0;
+  background-color: $primary-color;
 }
 
 .frame125 {
