@@ -3,30 +3,42 @@ sans-serif;
 $primary: #FFD868;
 $secondary: #721B65;
 $gray: rgba(0, 0, 0, 0.5);
- 
-@mixin titleH1($secondary) {
+
+@mixin titleH1() {
   font-size: 80px;
   color: $secondary;
   font-weight: 700;
 }
 
-@mixin titleH2($gray) {
+@mixin titleH2() {
   font-size: 60px;
   color: $gray;
   font-weight: 500;
 }
-@mixin buttonPrimary() {
-  // font-size: 60px;
-  // color: $gray;
-  // font-weight: 500;
+
+@mixin textP() {
+  font-size: 20px;
+  color: $gray;
+  font-weight: 300;
 }
+
+@mixin buttonPrimary() {
+  width: 273px;
+  height: 56px;
+  background: $secondary;
+  color: #fff;
+  border-radius: 10px;
+}
+
 @mixin buttonSecondary() {
-  // font-size: 60px;
-  // color: $gray;
-  // font-weight: 500;
+  width: 273px;
+  height: 56px;
+  background: #fff;
+  color: $secondary;
+  border-radius: 10px;
 }
 
 body {
+  margin: 0;
   font: 100% $font-stack;
-  color: $primary-color;
 }
