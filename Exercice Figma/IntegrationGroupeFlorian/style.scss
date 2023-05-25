@@ -1,7 +1,35 @@
-// Variables
+// Variables et mixin
 
 $primary-color: #ffd868;
 $secondary-color: #721b65;
+$font: Helvetica Neue;
+$color-paragraph: #000000;
+
+@mixin display($justify: center) {
+  display: flex;
+  flex-direction: row;
+  justify-content: $justify;
+}
+
+%paragraph {
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.8rem;
+}
 
 .header {
   display: flex;
@@ -20,92 +48,144 @@ $secondary-color: #721b65;
   align-items: center;
   width: 50%;
   height: 100%;
-  background-color: $primary-color;
 }
 
 .frame125 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   width: 570px;
-  height: 501;
-  background-color: lightcyan;
+  height: 496px;
+  &__title {
+    color: $secondary-color;
+    font-size: 8rem;
+  }
+  &__buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__paragraphe {
+    @extend %paragraph;
+    color: rgba($color-paragraph, 0.6);
+  }
+}
+
+// Composant bouton
+
+@mixin button($bg-color: white, $ft-color: $secondary-color) {
+  display: inline-block;
+  background-color: $bg-color;
+  width: 27.3rem;
+  height: 5.6rem;
+  border-radius: 10px;
+  border: none;
+  color: $ft-color;
+  font-size: 2.4rem;
+}
+
+.button {
+  @include button($secondary-color, white);
+}
+
+.button2 {
+  @include button();
 }
 
 .bloc-droit {
   width: 50%;
   height: 100%;
-  background-color: lightblue;
 }
 
 // Section 2
 
 .section2 {
+  margin: 10rem;
   display: flex;
+  text-align: right;
+  img {
+    width: 50%;
+  }
+}
+
+.paragraph-gui {
+  @extend %paragraph;
+  color: $color-paragraph;
+  margin-bottom: 6rem;
 }
 
 // Section 3
 
 .section3 {
   padding: 0.5rem;
-  background-color: white;
+  background-color: $primary-color;
 
   h2 {
-    color: black;
+    color: $secondary-color;
+    text-align: center;
+    padding: 3rem 0px;
   }
 
   div {
     display: flex;
+    margin-left: 10rem;
 
     figure {
-      margin-right: 0.5rem;
+      margin-right: 3rem;
 
       figcaption {
+        margin: 0;
+        background-color: $secondary-color;
         padding: 0.5rem;
-        color: black;
+        color: white;
       }
     }
   }
 
   a {
+    margin: 4rem auto;
     display: block;
     text-align: center;
-    color: black;
+    color: $secondary-color;
     text-decoration: none;
   }
 }
 
 // Section 4
 
-$font: Helvetica Neue;
-$color: #000000;
-
-@mixin display($justify: center) {
-  display: flex;
-  flex-direction: row;
-  justify-content: $justify;
+footer {
+  margin: 10rem;
 }
 
-footer {
-  h2 {
-    font-family: $font;
-    color: rgba($color, 0.5);
-    span {
-      color: $color;
-    }
+.socials {
+  margin: 12.6rem auto 8.6rem auto;
+  @include display();
+  align-items: center;
+  padding: 0;
+  gap: 50px;
+  a {
+    width: 111px;
+    height: 111px;
   }
-  p {
-    font-family: $font;
-    color: $color;
+}
+
+.buttoncontainer {
+  text-align: center;
+}
+
+// Titres
+
+.titrebicolor {
+  color: rgba($color-paragraph, 0.5);
+  padding-top: 10rem;
+  margin-bottom: 1.6rem;
+  span {
+    color: $color-paragraph;
   }
-  button {
-    @include display();
-  }
-  .socials {
-    @include display();
-    align-items: center;
-    padding: 0;
-    gap: 50px;
-    a {
-      width: 111px;
-      height: 111px;
-    }
-  }
+}
+
+h2 {
+  font-size: 6rem;
 }
