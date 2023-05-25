@@ -118,12 +118,13 @@ main .second p {
   display: flex;
   flex-direction: column;
   max-width: 1024px;
-  margin: 0 auto;
-  gap: 8rem;
+  margin: 6rem auto;
+  gap: 6rem;
 }
 .footer .footerHaut {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 }
 .footer .footerHaut button {
   align-self: center;
@@ -134,22 +135,17 @@ main .second p {
   gap: 5rem;
 }
 .footer div.cercle {
-  width: 8rem;
-  height: 8rem;
-  background-color: #221B72;
+  width: 6rem;
+  height: 6rem;
+  background-color: #721b65;
   border-radius: 50%;
   position: relative;
 }
 .footer div.cercle img {
   width: 70%;
   position: absolute;
-  top: 1.2rem;
-  left: 1.2rem;
-}
-
-h1 {
-  color: #221B72;
-  font-size: 5rem;
+  top: 0.95rem;
+  left: 0.95rem;
 }
 
 h2 {
@@ -166,8 +162,8 @@ p {
 }
 
 .bouton2, .bouton1 {
-  width: 30rem;
-  height: 4rem;
+  width: 21rem;
+  padding: 1rem;
   outline: none;
   border: none;
   border-radius: 8px;
@@ -179,6 +175,6 @@ p {
 }
 
 .bouton2 {
-  background-color: #221B72;
+  background-color: #721b65;
   color: #fff;
 }/*# sourceMappingURL=j.css.map */

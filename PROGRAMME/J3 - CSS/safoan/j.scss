@@ -133,12 +133,13 @@ main {
     display: flex;
     flex-direction: column;
     max-width: 1024px;
-    margin: 0 auto;
-    gap: 8rem;
+    margin: 6rem auto;
+    gap: 6rem;
 
     .footerHaut {
         display: flex;
         flex-direction: column;
+        gap: 2rem;
 
         button {
             align-self: center;
@@ -151,24 +152,19 @@ main {
         gap: 5rem;
     }
     div.cercle {
-        width: 8rem;
-        height: 8rem;
-        background-color: variables.$color1;
+        width: 6rem;
+        height: 6rem;
+        background-color: $importantColor;
         border-radius: 50%;
         position: relative;
 
         img {
             width: 70%;
             position: absolute;
-            top: 1.2rem;
-            left: 1.2rem;
+            top: 0.95rem;
+            left: 0.95rem;
         }
     }
-}
-
-h1 {
-    color: variables.$color1;
-    font-size: 5rem;
 }
 
 h2 {
@@ -185,8 +181,8 @@ p {
     color: variables.$color3;
 }
 %modeleBouton {
-    width: 30rem;
-    height: 4rem;
+    width: 21rem;
+    padding: 1rem;
     outline: none;
     border: none;
     border-radius: 8px;
@@ -198,6 +194,6 @@ p {
 }
 .bouton2 {
     @extend %modeleBouton;
-    background-color: variables.$color1;
+    background-color: $importantColor;
     color: variables.$color4;
 }
