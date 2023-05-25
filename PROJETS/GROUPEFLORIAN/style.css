@@ -138,7 +138,11 @@ body {
   margin-right: 3rem;
   width: 6.5rem;
 }
-
+.assistants {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
 .assistants article {
   display: flex;
   align-items: center;
@@ -151,8 +155,9 @@ body {
   margin-bottom: 2rem;
 }
 .assistants p {
-  color: #8c9193;
-  font-size: 1.5rem;
+    color: #8c9193;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
 .assistants button {
   margin-top: 2rem;
@@ -174,15 +179,8 @@ body {
 * {
   box-sizing: border-box;
 }
-html {
-  font-size: 62.5%;
-}
-body {
-  margin: 0;
-  padding: 0;
-}
 .portable {
-  background-image: url(./images/bg_portable.png);
+  background-image: url(./imagesGui/bg_portable.png);
   height: 40rem;
   display: flex;
 }
