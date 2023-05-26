@@ -1,3 +1,5 @@
+import "./fichier.scss"
+
 let nom = 'delepine';
 let prenom = 'guillaume'
 console.log(prenom);
